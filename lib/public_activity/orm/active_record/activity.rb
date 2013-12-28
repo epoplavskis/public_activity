@@ -17,7 +17,7 @@ module PublicActivity
         serialize :parameters, Hash
 
         if ::ActiveRecord::VERSION::MAJOR < 4 || defined?(ProtectedAttributes)
-          attr_accessible :key, :owner, :parameters, :recipient, :trackable
+          attr_accessible :key, :owner, :parameters, :recipient, :trackable, :particle_controller
         end
       end
     end
